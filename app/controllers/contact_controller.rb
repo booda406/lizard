@@ -5,7 +5,7 @@ def create
 
     respond_to do |format|
       if @contact.save
-        UserMailer.comment(@contact).deliver
+        UserMailer.contact(@contact).deliver
         format.html { redirect_to root_path, notice: 'Contact was successfully created.' }
         format.json { render action: 'show', status: :created, location: @contact }
       else

@@ -70,7 +70,7 @@ class LizdsController < ApplicationController
   end
 
   def share
-    
+    @contact = Contact.new
   end
 
   def launch

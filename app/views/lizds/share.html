@@ -8,6 +8,12 @@
             <div class="col-12 col-sm-12 col-lg-12">
               <h2>也想分享你的寶貝嗎？</h2>
               <p>現在網站功能還沒全部上線，不能自行上傳，但可以透過我這邊幫您新增你的寵物頁面，歡迎留言告訴我，或是你喜歡我的頁面也能在下面留下你的email，有新的頁面系統就會直接通知你:)</p>
+              <%= simple_form_for(@contact) do |f| %>
+              <%= f.input :name, :required => true, :label => "姓名：" %><br>
+              <%= f.input :email, :required => true, :label => "電子信箱：" %><br>
+              <%= f.text_area :content, :required => true, :label => "想對我們說的話：" %><br>
+              <%= f.submit "送出" %>
+              <% end %>
               <img src="/assets/lizard_2010_04.jpg" class="img-thumbnail">
             </div><!--/span-->
           </div><!--/row-->

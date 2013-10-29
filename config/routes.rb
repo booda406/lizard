@@ -11,6 +11,7 @@ Lizard::Application.routes.draw do
    get 'share' => 'lizds#share', :as => "share"
    get 'launch' => 'lizds#launch' #app
    get 'about' => 'lizds#about'
+   post 'contacts' => 'contact#create'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
