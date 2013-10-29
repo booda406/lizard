@@ -8,7 +8,7 @@ Lizard::Application.routes.draw do
   # root 'welcome#index'
   root 'lizds#lizard01'
    get 'share_count' => 'lizds#sell_count'
-   get 'share' => 'lizds#share'
+   get 'share' => 'lizds#share', :as => "share"
    get 'launch' => 'lizds#launch' #app
    get 'about' => 'lizds#about'
   # Example of regular route:

@@ -39,7 +39,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://localhost:3000">虎斑日記</a></li>
+            <li><a href="http://reptile-lizard.herokuapp.com/">虎斑日記</a></li>
             <li><a href="/about">關於虎斑日記</a></li>
             <li><a href="/launch">虎斑App下載</a></li>
           </ul>
@@ -64,7 +64,8 @@
               <h3>Kelly</h3>
               <p><a  href="mailto:viator75@hotmail.com">zaaas@hotmail.com</a></p>
               <p>台北 Taipei</p>
-                <a herf="/share" class="btn btn-default btn-xs seperate">＃鬆獅蜥</a> <a herf="/share" class="btn btn-default btn-xs">＃綠鬣蜥</a><br><br>
+                <%= link_to "＃鬆獅蜥", share_path, :class => "btn btn-default btn-xs seperate" %>
+                <%= link_to "＃綠鬣蜥", share_path, :class => "btn btn-default btn-xs" %><br><br>
               </div>
             <ul class="nav">
               <li><a href="/share" class="btn btn-primary">Follow＋</a></li><br>
