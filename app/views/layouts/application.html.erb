@@ -10,6 +10,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45242151-1', 'reptile-lizard.herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
  <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -24,12 +42,19 @@
             <li><a href="http://localhost:3000">虎斑日記</a></li>
             <li><a href="/about">關於虎斑日記</a></li>
             <li><a href="/launch">虎斑App下載</a></li>
-            <div class="fb-like social" data-href="https://loveturtle.herokuapp.com/" data-width="100px" data-height="30px" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
 
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-12 col-md-9">
+          <div class="jumbotron">
+            <h1>虎斑日記</h1>
+            <p>這是我的鬆獅蜥「虎斑」，在這邊放一些照片與大家分享！</p>
+            <div class="fb-like" data-href="http://reptile-lizard.herokuapp.com" data-width="auto" data-height="auto" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+          </div>
 <%= yield %>
 
 <div class="col-xs-12 col-sm-12 col-md-3" id="sidebar" role="navigation">
