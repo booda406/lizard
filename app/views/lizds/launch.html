@@ -8,6 +8,12 @@
             <div class="col-12 col-sm-12 col-lg-12">
               <h2>關於虎斑App</h2>
               <p>由於對於爬蟲的熱愛，所以建立了龜龜日記來分享我的龜龜生活。不過在做這個網站的同時，發現上傳照片有些麻煩，現在幾乎上網都被平板或是手機取代，因為自己的方便，我也規劃了app上傳的功能，希望可以讓操作更方便。而且平常工作又有點忙碌，只能一點一點慢慢做了，若你也對這個app或是網站有想法歡迎寫信跟我討論:)請大家多多指教囉！</p>
+              <%= simple_form_for(@contact) do |f| %>
+              <%= f.input :name, :required => true, :label => "姓名：" %><br>
+              <%= f.input :email, :required => true, :label => "電子信箱：" %><br>
+              <%= f.text_area :content, :required => true, :label => "想對我們說的話：" %><br>
+              <%= f.submit "送出" %>
+              <% end %>
               <img src="/assets/lizard_2010_04.jpg" class="img-thumbnail">
             </div><!--/span-->
           </div><!--/row-->
