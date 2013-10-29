@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>關於虎斑App</title>
+   
+  </head>
+  <body>
+    
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-12 col-md-9">
+          <div class="jumbotron">
+            <h1>虎斑日記</h1>
+            <p>這是我的鬆獅蜥「虎斑」，在這邊放一些照片與大家分享！</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12">
+              <h2>關於虎斑App</h2>
+              <p>由於對於爬蟲的熱愛，所以建立了龜龜日記來分享我的龜龜生活。不過在做這個網站的同時，發現上傳照片有些麻煩，現在幾乎上網都被平板或是手機取代，因為自己的方便，我也規劃了app上傳的功能，希望可以讓操作更方便。而且平常工作又有點忙碌，只能一點一點慢慢做了，若你也對這個app或是網站有想法歡迎寫信跟我討論:)請大家多多指教囉！</p>
+              <img src="/assets/lizard_2010_04.jpg" class="img-thumbnail">
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+        <br>
+        <!-- 這邊放留言區：蒐集email、名字、跟想對我們說的話。 -->
+        <div class="col-xs-12 col-sm-12 col-md-3" id="sidebar" role="navigation">
+          <div class="well sidebar-nav">
+              <img src="/assets/face.jpg" class="face">
+            <div class="user_info">
+              <h3>Kelly</h3>
+              <p><a  href="mailto:viator75@hotmail.com">zaaas@hotmail.com</a></p>
+              <p>台北 Taipei</p>
+                <a herf="#" class="btn btn-default btn-xs seperate">＃鬆獅蜥</a><!-- 連到share.html --> <a herf="#" class="btn btn-default btn-xs">＃綠鬣蜥</a></p><!-- 連到share.html -->
+              </div>
+            <ul class="nav">
+              <li><a href="#" class="btn btn-primary">Follow＋</a></li><br>
+              <li><a href="#"class="btn btn-success">我也要分享我的蜥蜴</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>我的虎斑日記</p>
+      </footer>
+
+    </div><!--/.container-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/bootstrap.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+	</script>
+  </body>
+</html>

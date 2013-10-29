@@ -6,12 +6,10 @@ Lizard::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'lizds#sell_index'
+  root 'lizds#lizard01'
    get 'share_count' => 'lizds#sell_count'
-   get 'follow' => 'lizds#follow'
-   get 'animal' => 'lizds#animal'
    get 'share' => 'lizds#share'
-   get 'first' => 'lizds#first'
+   get 'launch' => 'lizds#launch' #app
    get 'about' => 'lizds#about'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

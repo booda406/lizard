@@ -65,7 +65,7 @@ class LizdsController < ApplicationController
     
   end
 
-  def sell_index
+  def lizard01
     
   end
 
@@ -73,15 +73,7 @@ class LizdsController < ApplicationController
     
   end
 
-  def animal
-    
-  end
-
-  def follow
-    
-  end
-
-  def first
+  def launch
     
   end
 

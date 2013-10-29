@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>我的虎斑日記</title>
+
+  </head>
+  <body>
+  
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-12 col-md-9">
+          <div class="jumbotron">
+            <h1>虎斑日記</h1>
+            <p>這是我的鬆獅蜥「虎斑」，在這邊放一些照片與大家分享！</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12">
+              <h2>也想分享你的寶貝嗎？</h2>
+              <p>現在網站功能還沒全部上線，不能自行上傳，但可以透過我這邊幫您新增你的寵物頁面，歡迎留言告訴我，或是你喜歡我的頁面也能在下面留下你的email，有新的頁面系統就會直接通知你:)</p>
+              <img src="../images/lizard_2010_04.jpg" class="img-thumbnail">
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+        <br>
+        <!-- 這邊放留言區：蒐集email、名字、跟想對我們說的話。 -->
+        <div class="col-xs-12 col-sm-12 col-md-3" id="sidebar" role="navigation">
+          <div class="well sidebar-nav">
+              <img src="/assets/kelly_face.jpg" class="face">
+            <div class="user_info">
+              <h3>Kelly</h3>
+              <p><a  href="mailto:viator75@hotmail.com">zaaas@hotmail.com</a></p>
+              <p>台北 Taipei</p>
+                <a herf="/share" class="btn btn-default btn-xs seperate">＃鬆獅蜥</a><!-- 連到share.html --> <a herf="/share" class="btn btn-default btn-xs">＃綠鬣蜥</a></p><!-- 連到share.html -->
+              </div>
+            <ul class="nav">
+              <li><a href="#" class="btn btn-primary">Follow＋</a></li><br>
+              <li><a href="#"class="btn btn-success">我也要分享我的蜥蜴</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>我的虎斑日記</p>
+      </footer>
+
+    </div><!--/.container-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/bootstrap.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+  </script>
+  </body>
+</html>
