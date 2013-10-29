@@ -48,7 +48,7 @@ footer {
 }
 
 .jumbotron{
-  background-image: url('../images/lizard_2010_03.jpg');
+  background-image: url('/assets/lizard_2010_03.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
