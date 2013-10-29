@@ -1,0 +1,25 @@
+<h1>Listing lizds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lizds.each do |lizd| %>
+      <tr>
+        <td><%= link_to 'Show', lizd %></td>
+        <td><%= link_to 'Edit', edit_lizd_path(lizd) %></td>
+        <td><%= link_to 'Destroy', lizd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lizd', new_lizd_path %>
