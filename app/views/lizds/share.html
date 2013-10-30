@@ -8,12 +8,35 @@
             <div class="col-12 col-sm-12 col-lg-12">
               <h2>也想分享你的寶貝嗎？</h2>
               <p>現在網站功能還沒全部上線，不能自行上傳，但可以透過我這邊幫您新增你的寵物頁面，歡迎留言告訴我，或是你喜歡我的頁面也能在下面留下你的email，有新的頁面系統就會直接通知你:)</p>
+              <br>
+              
               <%= simple_form_for(@contact) do |f| %>
-              <%= f.input :name, :required => true, :label => "姓名：" %><br>
-              <%= f.input :email, :required => true, :label => "電子信箱：" %><br>
-              <%= f.text_area :content, :required => true, :label => "想對我們說的話：" %><br>
-              <%= f.submit "送出" %>
+              <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 adjust-left">
+                <h4>姓名：</h4>
+              <%= f.input_field :name, :required => true, :label => "姓名：" , :class => "form-control" , :placeholder => "如何稱呼您呢？"%></div>
+              </div>
+              <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 adjust-left">
+                 <h4>Email：</h4>
+              <%= f.input_field :email, :required => true, :label => "電子信箱：" , :class => "form-control"  , :placeholder => "留下您的email有任何虎斑的更新系統就會自動通知您喔～"%></div>
+              </div>
+              <div class="row">
+              <div class="col-xs-12 col-sm-12 col-lg-12 adjust-left">
+                 <h4>想對我們說的話：</h4>
+              <%= f.text_area :content, :required => true, :label => "想對我們說的話：" , :class => "form-control" , :style =>"overflow:visible" , :placeholder=> " 任何建議或想對我們說的話..."%></div>
+              </div>
+              <br>
+              <div class="row">
+              <div class="clearfix pull-right adjust-right">
+              <%= f.submit "送出" , :class => "btn btn-primary"%>
               <% end %>
+              </div>
+              <br>
+              <br><br>
+            </div>
+             
+
               <img src="/assets/lizard_2010_04.jpg" class="img-thumbnail">
             </div><!--/span-->
           </div><!--/row-->

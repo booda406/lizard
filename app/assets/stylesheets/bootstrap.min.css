@@ -112,3 +112,18 @@ h1{
 .seperate{
 	margin-right: 5px;
 }
+
+
+.simple_form{
+	padding: 0px;
+	margin-left: -15px;
+}
+
+.adjust-left{
+	padding-left: 30px;
+}
+
+.adjust-right{
+	padding-right: 15px;
+}
+
