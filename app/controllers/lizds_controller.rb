@@ -74,7 +74,7 @@ class LizdsController < ApplicationController
   end
 
   def launch
-    
+    @contact = Contact.new
   end
 
   def about
